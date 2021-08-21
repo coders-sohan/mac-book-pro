@@ -54,8 +54,7 @@ document.getElementById('promo-btn').addEventListener('click', function () {
    const promoInput = document.getElementById('promo-code');
    if (promoInput.value == "stevekaku") {
       const totalValue = document.getElementById('total-final');
-      const promoDiscount = totalValue.innerText*20/100;
-      console.log(promoDiscount);
+      const promoDiscount = (totalValue.innerText/100)*20;
       totalValue.innerText = totalValue.innerText - promoDiscount;
    }
    document.getElementById('promo-btn').disabled = true;
